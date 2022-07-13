@@ -1,22 +1,50 @@
-/** Boxes and stuff. Block elements I guess **/
-header {
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
 
+header .logo {
+   font-size: 24px;
+   color: #F9FAF8;
+}
+
+
+header, .first h1, second h2 {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+header a, first p {
+    color: #E5E7EB;
+    font-size: 18px #E5E7EB;
 }
 
 .row {
 
 }
 
-.first {
+.first h2 {
+
+    font-size: 48px;
+}
+
+
+
+h2 {
+    font-weight: 900;
+    color: #1F2937;
 
 }
 
-.second {
-
+.second h2 {
+    font-size: 36px;
 }
 
 .third {
-
+    background-color: #E5E7EB;
 }
 
 .fourth {
@@ -27,7 +55,6 @@ footer {
 
 }
 
-/** Inline elements and fonts and stuff **/
 
 #signup {
 
@@ -38,7 +65,7 @@ footer {
 }
 
 .quotee {
-    
+
 }
 
 .cta {
