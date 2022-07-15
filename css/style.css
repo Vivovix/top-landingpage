@@ -8,6 +8,7 @@
 body {
     height: 100vh;
 }
+
 .center {
     display: flex;
     width: 75%;
@@ -60,7 +61,7 @@ nav a {
 }
 
 .hero .left {
-    width:50%;
+    width: 50%;
     border: 1px solid red;
 }
 
@@ -86,4 +87,36 @@ button {
 
 .inforow {
     border: 2px solid green;
+}
+
+.boxes {
+    display: flex;
+}
+
+.boxcard {
+    align-items: center;
+    border: 1px solid green;
+}
+
+.boxcard p {
+    border: 1px solid red;
+    max-width: 150px;
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    border: 3px solid #3882F6;
+    margin: 20px 20px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.quoterow {
+    background-color: #e5e7eb;
+    height: 25%;
 }
