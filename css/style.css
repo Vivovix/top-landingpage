@@ -9,13 +9,27 @@ body {
     height: 100vh;
 }
 
-.center {
+
+.flex {
     display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.center {
     width: 75%;
     height: 100%;
     margin: auto;
     align-items: center;
 }
+
+.text-center {
+    text-align: center;
+}
+
+/* */
 
 header {
     border: 1px solid red;
@@ -25,25 +39,25 @@ header {
     padding-top: 1rem;
 }
 
-header .logo {
-    font-size: 24px;
-}
+    header .logo {
+        font-size: 24px;
+    }
 
-header a {
-    font-size: 18px;
-}
+    header a {
+        font-size: 18px;
+    }
 
 nav {
     margin-left: auto;
     height: 20%;
 }
 
-nav a {
-    color: #E5E7EB;
-    font-style: normal;
-    text-decoration: none;
-    margin-left: 2rem;
-}
+    nav a {
+        color: #E5E7EB;
+        font-style: normal;
+        text-decoration: none;
+        margin-left: 2rem;
+    }
 
 .hero {
     border: 1px solid blue;
@@ -53,23 +67,23 @@ nav a {
     color: #E5E7EB;
 }
 
+    .hero h2 {
+        font-size: 48px;
+        font-weight: 900;
+        color: #F9FAF8;
+    }
 
-.hero h2 {
-    font-size: 48px;
-    font-weight: 900;
-    color: #F9FAF8;
-}
+    .hero .left {
+        width: 50%;
+        border: 1px solid red;
+    }
 
-.hero .left {
-    width: 50%;
-    border: 1px solid red;
-}
-
-.hero .right {
-    height: 75%;
-    border: 1px solid blue;
-    border-radius: 3px;
-}
+    .hero .right {
+        height: 75%;
+        border: 1px solid blue;
+        border-radius: 3px;
+        margin-left: 5%;
+    }
 
 button {
     background-color: #3882f6;
@@ -81,42 +95,46 @@ button {
     margin-top: 10px;
 }
 
-.text-center {
-    text-align: center;
-}
 
 .inforow {
     border: 2px solid green;
 }
 
-.boxes {
-    display: flex;
-}
+    .infoheader {
+        font-size: 36px;
+        font-weight: 900;
+        color: #1F2937;
+    }
 
-.boxcard {
-    align-items: center;
-    border: 1px solid green;
-}
+    .boxes {
+        border: 1px solid purple;
+    }
 
-.boxcard p {
-    border: 1px solid red;
-    max-width: 150px;
-}
+    .box {
+        height: 150px;
+        width: 150px;
+        border-radius: 15px;
+        border: 3px solid #3882F6;
+        margin: 20px 20px;
+    }
 
-.box {
-    height: 150px;
-    width: 150px;
-    border-radius: 15px;
-    border: 3px solid #3882F6;
-    margin: 20px 20px;
-}
+    .boxcard {
+        align-items: center;
+        border: 1px solid green;
+    }
 
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
+    .boxcard p {
+        border: 1px solid red;
+        max-width: 150px;
+    }
 
 .quoterow {
     background-color: #e5e7eb;
     height: 25%;
 }
+
+    .quote {
+        font-size: 36px;
+        font-style: italic;
+        font-weight: 200;
+    }
