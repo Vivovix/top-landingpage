@@ -5,7 +5,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
-a, a:visited {
+a,
+a:visited {
     font-style: normal;
     text-decoration: none;
     color: inherit;
@@ -17,7 +18,8 @@ body {
     flex-direction: column;
 }
 
-ul, li {
+ul,
+li {
     list-style: none;
 }
 
@@ -29,13 +31,19 @@ ul, li {
     flex-direction: column;
 }
 
+.jc-sb {
+    justify-content: space-between;
+}
+
+.jc-c {
+    justify-content: center;
+}
+
 .center {
     width: 50%;
     height: 100%;
     margin: auto;
     align-items: center;
-    justify-content: space-between;
-    border: 1px solid red;
     padding: 25px;
 }
 
@@ -45,13 +53,13 @@ ul, li {
 
 /* */
 
-header {
+header,
+footer {
     background-color: #1f2937;
     color: #F9FAF8;
     flex-grow: 0;
     flex-shrink: 0;
     height: 80px;
-
 }
 
 header .logo {
@@ -133,8 +141,7 @@ button {
 }
 
 .boxcard p {
-
-    max-width: 150px;
+    width: 150px;
 }
 
 .quoterow {
@@ -142,8 +149,8 @@ button {
     flex: 1;
 }
 
-.quote {
-    width: 50%;
+.quoteblock {
+    width: 60%;
 }
 
 .quote-text {
@@ -153,8 +160,10 @@ button {
 }
 
 .quotee {
+    text-align: right;
     margin-left: auto;
     font-weight: 800;
+    margin-top: 5px;
 }
 
 .ctarow {
@@ -165,17 +174,14 @@ button {
 .cta {
     background-color: #3882f6;
     width: 75%;
-    height: 50%;
+    height: 150px;
     border-radius: 5px;
-    justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .cta-text {
-    width: 50%;
-    height: 50%;
     display: inline-block;
-
 }
 
 .cta-button {
@@ -191,12 +197,6 @@ button {
 
 .cta-subtitle {
     font-weight: 300;
-}
-
-footer {
-    flex: 1 0;
-    background-color: #1f2937;
-    color: #F9FAF8;
 }
 
 .copyright {
